@@ -1,0 +1,398 @@
+body
+{
+    position: fixed;
+
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+
+    background-color: #fff;
+    color: #e2e2e2;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+}
+
+.left-side {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  background-color: #222;
+}
+
+.rule-1 {
+  background: #000;
+  height: 40px;
+  height: 8px;
+  position: relative;
+  top: 157px;
+  width: 240px;
+  transform-origin: bottom;
+  margin: auto 20%;
+}
+
+.main-header {
+    margin: auto 20%;
+}
+
+.main-header__title,
+.main-header__subtitle  {
+  font-size: 1.625em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5em 0;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  height: 0;
+  overflow: hidden;
+}
+
+  .main-header__subtitle {
+    font-size: 1.325em;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 300;
+  }
+
+  .main-content__info {
+    font-size: 1em;
+  }
+
+
+ .right-side {
+  width: 80%;
+
+  position: absolute;
+  top: 0;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+
+  /* transform: translateY(-50%) translateX(25%); */
+  text-align: center;
+}
+
+.video {
+  margin: auto;
+  height: 100%;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main__image-1 {
+  opacity: 0;
+}
+
+.current-slide
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    padding: 0;
+    background: #222;
+
+}
+
+
+
+
+.btn
+{
+    display: inline-block;
+
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+
+    transition: all .5s ease;
+
+    border: solid 1px  #2f1b4e;
+    border-radius: 50%;
+    outline: none !important;
+    -webkit-appearance: initial;
+}
+
+
+.btn:nth-last-child(1)
+{
+    margin-right: 0;
+}
+
+.btn.btn-primary
+{
+    border: solid 1px red;
+    outline: none;
+    background-color: rgb(160,92,255);
+    background-color: rgba(160,92,255,.4);
+}
+
+.btn.btn-primary:hover
+{
+    color: #fff;
+    border: solid 1px red;
+    background-color: #4e2d80;
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:focus
+{
+    color: #fff;
+    border: solid 1px red;
+    background-color: rgb(160,92,255);
+    background-color: rgba(160,92,255,.4);
+}
+
+
+.btn.btn-default
+{
+    opacity: .7;
+}
+
+
+.btn.btn-default:hover
+{
+    opacity: 1;
+    color: #fff;
+    border: solid 1px red;
+    background-color: #4b3080;
+}
+
+.btn.btn-default:active,
+.btn.btn-default:focus
+{
+    color: #fff;
+    background-color: #a05cff;
+    background-color: rgb(160,92,255);
+    background-color: rgba(160,92,255,.7);
+}
+
+
+.btn-group-wrap
+{
+    position: fixed;
+    z-index: 999;
+    bottom: 5%;
+
+    width: 100%;
+    height: 25px;
+}
+
+.btn-group
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/* Active animation */
+.active-animation
+{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+}
+
+.btn-previous-wrap {
+    position: fixed;
+    opacity: .07;
+    top: 40vh;
+    left:25px;
+    height: 20vh;
+    width: 35px;
+    transition: opacity .3s ease;
+}
+
+.btn-previous-wrap:hover
+{
+    opacity: 1;
+}
+
+.btn-previous
+{
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    opacity: 1;
+    border-top: 10vh solid transparent;
+    border-right: 35px solid black;
+    border-bottom: 10vh solid transparent;
+
+    transition: border-right .3s ease;
+}
+
+.btn-previous:hover
+{
+    opacity: 1;
+    border-right: 35px solid #7343bc;
+}
+
+.btn-next-wrap {
+    position: fixed;
+    opacity: .07;
+    top: 40vh;
+    right: 25px;
+    height: 20vh;
+    width: 35px;
+    transition: opacity .3s ease;
+}
+
+.btn-next-wrap:hover
+{
+    opacity: 1;
+}
+
+.btn-next
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    opacity: 1;
+    border-top: 10vh solid transparent;
+    border-bottom: 10vh solid transparent;
+    border-left: 35px solid black;
+
+    transition: border-left .3s ease;
+}
+
+.btn-next:hover
+{
+    opacity: 1;
+    border-left: 35px solid #7343bc;
+}
+
+
+/* Could Use GSAP here as well */
+/* Vue JS - Transition Classes */
+/* fade in or out - Previous and Next Buttons */
+
+.fade-enter
+{
+    opacity: 0;
+}
+
+.fade-enter-active
+{
+    transition: opacity 4s ease;
+}
+
+.fade-enter-to
+{
+    /* Vue JS Default is opacity: 1; */
+}
+
+.fade-leave
+{
+    /* Vue JS Default is opacity: 1; */
+}
+
+.fade-leave-active
+{
+    transition: opacity 4s ease;
+}
+
+.fade-leave-to
+{
+    opacity: 0;
+}
+
+.bodymovin {
+  position: absolute;
+  top: 0;
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  z-index: 111;
+}
+
+
+/* modal */
+
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

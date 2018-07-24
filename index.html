@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <title>Jonathan Larson::Portfolio 2018</title> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+  <div id="portfolio" class="demo">
+
+  <div class="btn-group-wrap">
+    <div class="btn-group">
+      <div
+           v-for="navButton in navButtonSet"
+           type="button" @click="currentSelect = navButton.id, currentIndex = navButton.number, sendLog()"
+           :class="['btn', { 'btn-primary': navButton.number === currentIndex, 'btn-default': navButton.number !== currentIndex }]"
+           >
+
+      </div>
+    </div>
+
+
+    <!-- <transition name="fade">
+      <div class="play-video" @click="showVid()">
+        <h1 style="color: #fff">play >
+      </div>
+    </transition> -->
+
+    <transition name="fade">
+      <div v-if="slideLeft" class="btn-previous-wrap">
+        <div @input="gotToPrev()" @click="gotToPrev()" class="btn-previous"></div>
+      </div>
+    </transition>
+
+    <transition name="fade">
+      <div v-if="slideRight" class="btn-next-wrap">
+        <div @input="gotToNext()" @click="gotToNext()" class="btn-next"></div>
+      </div>
+    </transition>
+
+  </div>
+
+
+
+<transition
+  v-on:enter="enter"
+  v-on:after-enter="afterEnter"
+  v-on:leave="leave"
+  v-bind:css="false"
+ >
+  <component v-bind:is="currentSelect" class="current-slide">
+  </component>
+</transition>
+
+
+</div>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js'></script> -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.0.0/vue-router.min.js'></script> -->
+  <script src='js/libs/TweenMax.min.js'></script>
+  <script src='js/libs/vue.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.0.0/vue-router.min.js'></script> -->
+  <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
