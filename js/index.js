@@ -127,10 +127,10 @@ new Vue({
       template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
     },
     'slide-5': {
-      template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
+      template: ' <div class=scroll-page><h2>Virin America</h2><!-- <div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/loop=1&?background=1&muted=0" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3></h3></div></div> --><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281645752" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Amenities 2016: Nasday Tower In Situ</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281645878" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Amenities 2016: 42 East In Situ</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281645859" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Amenities 2016: Bryant St In Situ</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281645836" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Amenities 2016: Nasdaq</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/179987139" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Premium Campaign: Nasdaq</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/166093511" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Amenities: Nasdaq</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/166093512" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Google Seat View</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/166093516" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Hawaii Hard: Nasdaq Marquee</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/165729693" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Hawaii Hard: Surfer</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/165730440" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Hawaii Hard: Volcano</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/165782658" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Hawaii Hard: Parachute</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/165782712" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Hawaii Hard: Times Square in situ</h3></div></div></div><!-- last div --> '
     },
     'slide-6': {
-      template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
+      template: '  <div class=scroll-page><h2>Visa</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281581426" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Visa+Samsung Film</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180688127" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Visa.com DPS Microsite Page Transitions </h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281592673" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Visa.com Regionals Interchange Calculator </h3></div></div></div><!-- last div -->  '
     }
   },
   created() {
@@ -348,14 +348,13 @@ new Vue({
 				onComplete: done
 			})
 
+      tl.set(scrollPage, {
 
-
-			tl.set(rightSide, {
-
-        x: 0,
-        width: 0,
+        opacity: '1',
+        zIndex: '21',
 				// transformOrigin: '0 50%'
 			})
+
 
       tl.to(closeBtn, 1, {
         opacity: '1',
@@ -364,21 +363,15 @@ new Vue({
         ease: easeA
       }, "first");
 
-      tl.to(main, 1, {
-        // width: '0',
-        opacity: '0',
-        x: 130,
-        zIndex: '-1',
-        transformOrigin: '100% 50%',
-        ease: easeA
-      }, "first");
-
-      tl.to(scrollPage, 1, {
-        opacity: '1',
-        zIndex: '21',
-        // transformOrigin: '100% 50%',
-        ease: easeA
-      }, "first");
+      // tl.to(main, 1, {
+      //   // width: '0',
+      //   opacity: '0',
+      //   x: 130,
+      //   zIndex: '-1',
+      //   transformOrigin: '100% 50%',
+      //   ease: easeA
+      // }, "first");
+      //
 
 
 
