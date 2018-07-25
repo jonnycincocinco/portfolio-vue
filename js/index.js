@@ -33,7 +33,8 @@ var ITEManimate = ({
 });
 
 // const easeA = ITEManimate.bezier(0.930, 0.035, 0.350, 0.815);
-const easeA = ITEManimate.bezier(.23, .9, 0.2, 1);
+// const easeA = ITEManimate.bezier(.23, .9, 0.2, 1);
+const easeA = ITEManimate.bezier(0.77, 0, 0.175, 1);
 const easeB = ITEManimate.bezier(0.815, 0.035, 0.350, 0.930);
 
 
@@ -46,6 +47,26 @@ const header = document.getElementsByClassName('main-header');
 const headerTitle = document.getElementsByClassName('main-header__title');
 const headerSubTitle = document.getElementsByClassName('main-header__subtitle');
 const img1 = document.getElementsByClassName('main__image-1');
+
+const scrollPage = document.getElementsByClassName('scroll-page');
+const main = document.getElementsByClassName('main');
+const mainHeader = document.getElementsByClassName('main-header');
+const mainHeaderImg = document.getElementsByClassName('main-header-img');
+const closeBtn = document.getElementsByClassName('close');
+
+
+
+// const learnmore = document.getElementById("learnMore");
+
+
+
+// function onHoverOver(e){
+//   TweenMax.fromTo( learnMore, 0.6, { boxShadow:"0px 0px 0px 0px green"}, {boxShadow:"0px 0px 20px 2px #91f600", repeat:-1, yoyo:true});
+// }
+//
+// function onHoverOut(e){
+//   TweenMax.to( learnMore, 0.2, {boxShadow:"0px 0px 0px 0px yellow"});
+// }
 
 new Vue({
   el: '#portfolio',
@@ -91,16 +112,25 @@ new Vue({
   },
   components: {
     'slide-0': {
-      template: '<div class=main><div class=left-side><div class=rule-1></div><div class=main-header><h1 class="main-header__title">Headline</h1><h2 class="main-header__subtitle">Headline</h2><p class=main-content__info>Test</p></div></div><div class=right-side><img class=main__image-1 src="assets/images/apple-1.png" /><video loop class=video><source src=assets/mp4/vx-nas.mp4 height=1440 type=video/mp4></video></div></div>'
+      template: '<div></div>'
     },
     'slide-1': {
-      template: '<div class=main><div class=left-side><div class=rule-1></div><div class=main-header><h1 class="main-header__title">Headline</h1><h2 class="main-header__subtitle">Headline</h2><p class=main-content__info>Test</p></div></div><div class=right-side><video loop class=video><source src=assets/mp4/vx-nas.mp4 height=1440 type=video/mp4></video><img class=main__image-1 src="assets/images/vx-1.png" /></div></div>'
+      template: '<div class=scroll-page><h2>Apple</h2><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/cmw-kids-hour.mp4 type=video/mp4></video><h3>Today at Apple Video Wall: Kids Hour</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/cmw-sketch-walks.mp4 type=video/mp4></video><h3>Today at Apple Video Wall: Sketch Walks</h3></div></div><div class=revealer><img src="assets/apple/cmw-lineup-concept.jpg"/><h3>Today at Apple Video Wall: Concept Frame</h3></div><div class=revealer><img src="assets/apple/retail-panel.jpg"/><h3>Today at Apple Retail Panel</h3></div><div class=revealer><img src="assets/apple/retail-panel-situ.jpg"/><h3>Today at Apple Retail Panel (in situ)</h3></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/cmw-screensaver.mp4 type=video/mp4></video><h3>Today at Apple: Screensaver</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/cmw-social.mp4 type=video/mp4></video><h3>Today at Apple: Social Film</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/cmw-snapchat.mp4 type=video/mp4></video><h3>Today at Apple: Snapchat</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/iphone-x.mp4 type=video/mp4></video><h3>iPhone X Launch Film</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/apple/watch-ui.mp4 type=video/mp4></video><h3>Apple Watch UI Animations</h3></div></div></div><!-- last div --> '
     },
     'slide-2': {
-      template: '<div><p>Slide 3</p></div>'
+      template: '<div class=scroll-page><h2>Airbnb</h2><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/airbnb/airbnb-collections.mp4 type=video/mp4></video><h3>Collections: UI demo film</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/airbnb/surf-for-a-cause.mp4 type=video/mp4></video><h3>Experiences: Product prototype</h3></div></div><div class=revealer><div class=video-container><video controls loop class=video><source src=assets/airbnb/framer-screencap.mp4 type=video/mp4></video><h3>Experiences: Product prototype in Framer</h3></div></div></div><!-- last div --> '
     },
-    'modal': {
-      template: '#modal-template'
+    'slide-3': {
+      template: ' <div class=scroll-page><h2>HP</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281580202" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Unicorn</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281579651" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Like a Boss</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281579944" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Durability</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/264095309" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Split Screen</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/264094480" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Every Penny Counts</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/264095255" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Magic Tray</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281580151" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Flipbook</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/281579850" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Assist</h3></div></div></div><!-- last div --> '
+    },
+    'slide-4': {
+      template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
+    },
+    'slide-5': {
+      template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
+    },
+    'slide-6': {
+      template: ' <div class=scroll-page><h2>Dignity Health</h2><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/190126212" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>World of Healing Intro Animations</h3></div></div><div class=revealer><div class=video-container><iframe src="https://player.vimeo.com/video/180694073" width="1360" height="765" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><h3>Dr. Day Social Film</h3></div></div></div><!-- last div --> '
     }
   },
   created() {
@@ -108,6 +138,133 @@ new Vue({
     this.internalValue = this.value;
   },
   methods: {
+
+    gotToApple() {
+      this.currentSelect = 'slide-1';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        ease: easeA
+      }, "first");
+
+
+    },
+
+    gotToAirbnb() {
+      this.currentSelect = 'slide-2';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        // transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+    },
+
+    gotToHp() {
+      this.currentSelect = 'slide-3';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        // transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+    },
+
+    gotToDh() {
+      this.currentSelect = 'slide-4';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        // transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+    },
+
+    gotToVx() {
+      this.currentSelect = 'slide-5';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        // transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+    },
+
+    gotTovisa() {
+      this.currentSelect = 'slide-6';
+
+      const tl = new TimelineMax;
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
+        x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
+        // transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+    },
 
     gotToPrev() {
       if ( this.currentIndex === 0 ) {
@@ -129,87 +286,34 @@ new Vue({
       }
     }, // END gotToNext
 
-    showVid() {
+    closeSlide() {
       const tl = new TimelineMax;
 
-      tl.to(vid, 1, {
-        height: '100vh',
-				ease: easeA
-			}, "intro");
-
-      tl.to(leftSide, 1, {
-				width: '0',
-        left: '-25vw',
-				ease: easeA
-      }, "intro");
-
-      tl.to(rightSide, 1, {
-				width: '100vw',
-        left: '0',
-				ease: easeA
-			}, "intro");
-
-      vid[0].play();
-    },
-
-    showImg1() {
-      const tl = new TimelineMax;
-
-      tl.to(img1, 1, {
-        opacity: 1,
-        ease: easeA
-			}, "intro");
-
-      tl.to(vid, 1, {
-        opacity: 0,
-        ease: easeA
-			}, "intro");
-
-      tl.to(leftSide, 1, {
-				width: '0',
-        left: '-25vw',
-				ease: easeA
-      }, "intro");
-
-      tl.to(rightSide, 1, {
-				width: '100vw',
-        left: '0',
-				ease: easeA
-			}, "intro");
-
-
-    },
-
-    hideVid() {
-      const tl = new TimelineMax;
-
-      tl.to(vid, 3, {
-        height: 'auto',
-        width: '80vw',
-        left: '120px',
-        ease: easeA
-      }, "intro");
-
-      tl.to(leftSide, 1, {
-        width: '20vw',
-        left: '0',
-        ease: easeA
-      }, "intro");
-
-      tl.to(rightSide, 1, {
+      tl.to(main, 1, {
         width: '100vw',
-        left: '20%',
+        opacity: '1',
+        x: 0,
+        zIndex: '222',
+        // transformOrigin: '100% 50%',
         ease: easeA
-      }, "intro");
+      }, "first");
 
-      vid[0].pause();
+      tl.to(scrollPage, 0.7, {
+        height: '0',
+        opacity: '0',
+        x: 130,
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first+=0.2");
+
+      tl.to(closeBtn, 1, {
+        opacity: '0',
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
     },
-
-    sendLog() {
-
-      console.log(this.currentSelect + ' = this.currentSelect value');
-
-    }, //END sendLog
 
 
     listenForArrowKeys (event) {
@@ -229,11 +333,8 @@ new Vue({
         } else if (event.keyCode == 27) {
             console.log('escape-pressed');
             // gotToPrevSlide;
-            this.hideVid();
-        // } else if (event.keyCode == 27) {
-        //   console.log('img');
-        //   // gotToPrevSlide;
-        //   this.showImg1();
+            this.closeSlide();
+
         //
           } else {
           return
@@ -247,70 +348,46 @@ new Vue({
 				onComplete: done
 			})
 
-    //   vx ref:
-    // tl1.to('#type1', 1, {opacity: 1, left:34 , ease: Back.easeInOut.config(1) }, '-=0.5' );
+
 
 			tl.set(rightSide, {
-				// x: window.innerWidth * 1.5,
-			//	x: window.innerWidth * 1.5,
-			//	scale: 0.7,
+
         x: 0,
         width: 0,
 				// transformOrigin: '0 50%'
 			})
 
-      tl.set(headerTitle, {
-				height: '0',
-				transformOrigin: '0 0'
-			})
+      tl.to(closeBtn, 1, {
+        opacity: '1',
+        zIndex: '21',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
 
-      tl.set(rule1, {
-				height: '140px',
-				transformOrigin: '0 0'
-			})
-
-
-
-      tl.to(rightSide, 1, {
-				width: '80vw',
+      tl.to(main, 1, {
+        // width: '0',
+        opacity: '0',
         x: 130,
+        zIndex: '-1',
+        transformOrigin: '100% 50%',
+        ease: easeA
+      }, "first");
+
+      tl.to(scrollPage, 1, {
+        opacity: '1',
+        zIndex: '21',
         // transformOrigin: '100% 50%',
-				ease: easeA
-			}, "first");
+        ease: easeA
+      }, "first");
 
-      tl.to(headerTitle, 1.2, {
-      	height: '30px',
-      	ease: easeA
-      }, "second-=0.5" );
 
-      tl.to(rule1, 1.2, {
-      	height: '8px',
-      	ease: easeA
-      }, "second-=0.5" );
 
-      tl.to(rightSide, .8, {
-        scale: 1,
-        ease: easeB
-      }, "second+=0.2");
 
-      // tl.to(playBtn, 1, {
-      //   opacity: .5,
-      //   ease: Power4.easeOut
-      // }, "intro");
 		},
 		afterEnter() {
       const tl = new TimelineMax;
 
       console.log('after');
-      // tl.to(headerTitle, 1.5, {
-			// 	height: '30px',
-			// 	ease: Power4.easeOut
-		  // }, '-=1.5' );
-      //
-      // tl.to(rule1, 1.5, {
-			// 	height: '8px',
-			// 	ease: Power4.easeOut
-		  // }, '-=1.5' );
 
 		},
 		leave(el, done) {
@@ -318,24 +395,6 @@ new Vue({
 				onComplete: done
 			})
 
-      tl.to(rightSide, 1, {
-        // width: 0,
-        //
-        // transformOrigin: '100% 50%',
-        // x: window.innerWidth * 1.5,
-        // x: 130,
-				ease: easeA
-		    });
-
-      tl.to(headerTitle, .2, {
-				height: '0',
-				ease: easeB
-		    });
-
-      tl.to(rule1, .2, {
-				height: '40px',
-				ease: easeB
-		    });
 
       TweenMax.fromTo(el, 1, {
 				autoAlpha: 1
@@ -346,5 +405,6 @@ new Vue({
 			});
 		}
 
-  }, // END methods
+  },
+   // END methods
 })

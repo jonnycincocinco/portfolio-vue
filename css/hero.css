@@ -1,0 +1,114 @@
+
+.main {
+  z-index: 222;
+  position: fixed;
+  top: 1%;
+  /* position: relative; */
+}
+.main-header {
+  position: relative;
+  z-index: 222;
+}
+
+.main-header__dh,
+.main-header__vx {
+    /* margin-top: 2%;
+    margin-bottom: 1.5%; */
+    /* line-height: .8; */
+    width: 100vw;
+}
+.main-header__dh {
+  /* margin-bottom: 3.2%; */
+}
+
+ {
+    line-height: .8;
+}
+
+.main-header-item {
+  font-size: 65px;
+  line-height: 1;
+  /* font-size: 72px; */
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+
+.main-header-item:hover {
+  color: #ccc;
+}
+
+.main-header-img
+ {
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translate(-50%, 0) scale(1);
+    transition-delay: 0s;
+    transform-origin: 50% 50%;
+    position: fixed;
+    opacity: 0;
+    line-height: 0;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    /* z-index: -1; */
+}
+
+.main-header-img > img {
+  width: 100%;
+}
+
+.main-header__apple:hover + .main-header-img__apple {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.main-header__airbnb:hover + .main-header-img__airbnb {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.main-header__hp:hover + .main-header-img__hp {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.main-header__dh:hover + .main-header-img__dh {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.main-header__vx:hover + .main-header-img__vx {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.main-header__visa:hover + .main-header-img__visa {
+
+      transform: translate(-50%, 0) scale(1.03);
+      opacity: 1;
+      transition-delay: .2s;
+
+}
+
+.hidden { display: none; }
+.trigger:hover + .hidden { display: inline; }
+
+.scroll-page {
+  opacity: 0;
+  z-index: -1;
+}

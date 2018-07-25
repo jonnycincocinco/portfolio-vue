@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
 
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/hero.css">
 
 
 </head>
@@ -19,8 +20,51 @@
 
   <div id="portfolio" class="demo">
 
+    <div class=main>
+        <div class=main-header>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__apple" @click="gotToApple()">Apple</h1>
+            <div class="main-header-img main-header-img__apple">
+              <img src="assets/apple/hero.png"/>
+            </div>
+          </div>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__airbnb" @click="gotToAirbnb()">Airbnb</h1>
+            <div class="main-header-img main-header-img__airbnb">
+              <img src="assets/airbnb/hero.png"/>
+            </div>
+          </div>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__hp" @click="gotToHp()">HP</h1>
+            <div class="main-header-img main-header-img__hp">
+              <img src="assets/hp/hero.png"/>
+            </div>
+          </div>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__dh" @click="gotToDh()">Dignity Health</h1>
+            <div class="main-header-img main-header-img__dh">
+              <img src="assets/dh/hero.png"/>
+            </div>
+          </div>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__vx" @click="gotToVx()">Virgin America</h1>
+            <div class="main-header-img main-header-img__vx">
+              <img src="assets/vx/hero.png"/>
+            </div>
+          </div>
+          <div class=main-header-item>
+            <h1 class="main-header main-header__visa" @click="gotTovisa()">Visa</h1>
+            <div class="main-header-img main-header-img__visa">
+              <img src="assets/visa/hero.png"/>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
   <div class="btn-group-wrap">
-    <div class="btn-group">
+    <!-- <div class="btn-group">
       <div
            v-for="navButton in navButtonSet"
            type="button" @click="currentSelect = navButton.id, currentIndex = navButton.number, sendLog()"
@@ -28,14 +72,15 @@
            >
 
       </div>
-    </div>
+    </div> -->
 
 
-    <!-- <transition name="fade">
-      <div class="play-video" @click="showVid()">
-        <h1 style="color: #fff">play >
+    <transition name="fade">
+      <div class="btn-previous-wrap">
+        <div @click="closeSlide()" class="close"></div>
       </div>
-    </transition> -->
+    </transition>
+<!--
 
     <transition name="fade">
       <div v-if="slideLeft" class="btn-previous-wrap">
@@ -47,7 +92,7 @@
       <div v-if="slideRight" class="btn-next-wrap">
         <div @input="gotToNext()" @click="gotToNext()" class="btn-next"></div>
       </div>
-    </transition>
+    </transition> -->
 
   </div>
 
@@ -72,6 +117,8 @@
   <script src='js/libs/vue.js'></script>
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.0.0/vue-router.min.js'></script> -->
   <script  src="js/index.js"></script>
+  <!-- <script  src="js/vue-scrollview.min.js"></script> -->
+  <!-- <script  src="js/show-on-scroll.js"></script> -->
 
 
 
