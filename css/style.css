@@ -84,9 +84,19 @@ body
   text-align: center;
 }
 
+.video-container-snapchat {
+  text-align: center;
+}
+
 video {
   width: 100%;
 height: auto;
+}
+
+@media only screen and (min-device-width : 768px) {
+  .video-container-snapchat video {
+    width: 28%;
+  }
 }
 
 .client {
@@ -174,21 +184,23 @@ height: auto;
 
 .close {
   position: absolute;
-  right: 32px;
-  top: 32px;
-  width: 32px;
-  height: 32px;
+  right: 35px;
+  top: 64px;
+  width: 133px;
+  height: 104px;
   opacity: 0;
+  background: #f9f9f9;
 }
 .close:hover {
   opacity: 1;
 }
 .close:before, .close:after {
   position: absolute;
-  left: 15px;
+  left: 50%;
   content: ' ';
-  height: 33px;
-  width: 2px;
+  height: 70px;
+  width: 1px;
+  top: 15px;
   background-color: #333;
 }
 .close:before {
